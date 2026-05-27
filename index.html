@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(47, 155, 47);
+            border-radius: 100%;
+            margin-top: 200px;
+            margin-left: 400px;
+
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(95, 65, 65);">
+
+    <div id="box"></div>
+
+  
+
+    <script>
+        var box1 = document.getElementById('box')
+
+        // var top = 200
+        // var left = 400
+
+        document.addEventListener("keydown", function (e) {
+
+            if (e.key == "ArrowUp") {
+                box1.style.marginTop = "100px"
+
+
+
+            }
+
+            else if (e.key == "ArrowLeft") {
+                box1.style.marginLeft = "100px"
+            }
+
+            else if (e.key == "ArrowRight") {
+                box1.style.marginLeft = "800px"
+            }
+
+            else if (e.key == "ArrowDown") {
+                box1.style.marginTop = "500px"
+            }
+        })
+    </script>
+</body>
+
+</html>
